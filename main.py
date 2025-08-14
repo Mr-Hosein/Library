@@ -6,18 +6,7 @@ logging.basicConfig(filename = 'log_file.log' , level = logging.INFO)
 logger = logging.getLogger()
 
 
-class Book:
-    def __init__(self, title: str, author: str, is_borrowed: bool = False):
-            self.title = title
-            self.author = author
-            self.is_borrowed = is_borrowed
 
-    def show_detail(self):
-        status = "amanat dade shode" if self.is_borrowed else "mojood hast"
-        return f"{self.title} - {self.author} - {status}"
-        
-    def change_loan_status(self, status: bool):
-        self.is_borrowed = status
     
 
 class Library:
